@@ -1,11 +1,11 @@
 from PIL import Image
 
 def text_to_bin(text):
-    """Converts text to binary representation."""
+   #"""Converts text to binary representation."""
     return ''.join(format(ord(c), '08b') for c in text)
 
 def encode_image(image_path, secret_message, output_path):
-    """Encodes a secret message inside an image."""
+    #"""Encodes a secret message inside an image."""
     image = Image.open(image_path)
     encoded_image = image.copy()
     pixels = encoded_image.load()
